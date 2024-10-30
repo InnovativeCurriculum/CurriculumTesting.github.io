@@ -50,7 +50,7 @@
       }
     
       // choose the data file based on whether there's support for the ASTC texture compression format
-      var dataFile = "/Temp Build.data";                                  
+      var dataFile = "/WebGL_Mobile.data";                                  
       var c = document.createElement("canvas");                                 
       var gl = c.getContext("webgl");                                       
       var gl2 = c.getContext("webgl2");                                     
@@ -60,11 +60,11 @@
       } 
     
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Temp Build.loader.js";                    
+      var loaderUrl = buildUrl + "/WebGL_Mobile.loader.js";                    
       var config = {                                                            
         dataUrl: buildUrl + dataFile,                                           
-        frameworkUrl: buildUrl + "/Temp Build.framework.js",                 
-        codeUrl: buildUrl + "/Temp Build.wasm",                           
+        frameworkUrl: buildUrl + "/WebGL_Mobile.framework.js",                 
+        codeUrl: buildUrl + "/WebGL_Mobile.wasm",                           
         streamingAssetsUrl: "StreamingAssets",                                
         companyName: "DefaultCompany",
         productName: "IEN",
