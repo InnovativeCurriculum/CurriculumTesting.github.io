@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | IEN</title>
+    <title>Unity WebGL Player | Hospitality Front Desk</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">IEN</div>
+        <div id="unity-build-title">Hospitality Front Desk</div>
       </div>
     </div>
     <script>
@@ -50,7 +50,7 @@
       }
     
       // choose the data file based on whether there's support for the ASTC texture compression format
-      var dataFile = "/Builds.data";                                  
+      var dataFile = "/WebGL_Build.data";                                  
       var c = document.createElement("canvas");                                 
       var gl = c.getContext("webgl");                                       
       var gl2 = c.getContext("webgl2");                                     
@@ -60,15 +60,15 @@
       } 
     
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Builds.loader.js";                    
+      var loaderUrl = buildUrl + "/WebGL_Build.loader.js";                    
       var config = {                                                            
         dataUrl: buildUrl + dataFile,                                           
-        frameworkUrl: buildUrl + "/Builds.framework.js",                 
-        codeUrl: buildUrl + "/Builds.wasm",                           
+        frameworkUrl: buildUrl + "/WebGL_Build.framework.js",                 
+        codeUrl: buildUrl + "/WebGL_Build.wasm",                           
         streamingAssetsUrl: "StreamingAssets",                                
         companyName: "DefaultCompany",
-        productName: "IEN",
-        productVersion: "0.1.0",                
+        productName: "Hospitality Front Desk",
+        productVersion: "0.1",                
         showBanner: unityShowBanner,                                             
       };
     
